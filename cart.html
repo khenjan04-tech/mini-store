@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="cart-page">
+  <h1>Your Order Cart</h1>
+
+  <div id="cart-items"></div>
+  <h2 id="cart-total"></h2>
+
+  <h3>Choose Order Type:</h3>
+  <select id="order-type">
+    <option value="Delivery">Delivery</option>
+    <option value="Pickup">Pickup</option>
+  </select>
+
+  <input id="customer-name" placeholder="Your Name">
+  <input id="customer-number" placeholder="Contact Number">
+  <textarea id="customer-address" placeholder="Delivery Address (Leave blank for Pickup)"></textarea>
+
+  <button onclick="checkoutOrder()">Place Order</button>
+  <button onclick="window.location.href='index.html'">Back to Home</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
